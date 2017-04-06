@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>方便网</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<script src="js/js.js"></script>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+
+	<body>
+		<!--头部大标题-->
+		<header>
+			<div class="logo">
+				<img src="images/logo.png" class="logo1" />
+				<img src="images/logo1.png" class="logo2" />
+			</div>
+		</header>
+		<!--主题内容-->
+		<main>
+			<!--登录-->
+			<div class="enter">
+				<span><img src="images/icon9_1.png" /></span>
+				<span>注册会员</span>
+				<span>我已经注册，现在就登录</span>
+				<span> 登录</span>
+			</div>
+			<!--注册-->
+			<div class="registered">
+				<!--进度条-->
+				<div class="progress">
+					<ul>
+						<li>填写注册信息</li>
+						<li>接受并填写手机验证码</li>
+						<li>注册成功</li>
+					</ul>
+					<ul>
+						<li><img src="images/regis1.png" /></li>
+						<li><img src="images/regis3.png" /></li>
+						<li><img src="images/regis4.png" /></li>
+					</ul>
+				</div>
+				<!--表单-->
+				<form action="">
+					<P class="style">
+						<label for="username">手机号码</label>
+						<input type="text" id="username" onblur="checkUsername()">
+						<img src="images/icon21_1.png" id="icon-red" />
+						<span id="usernameInfo">
+							<img src="images/icon35.png" id="icon-green">
+							<span id="icon-orange"><img src="images/icon21.png" class="test">确认手机号码错误</span>
+						</span>
+					</P><br />
+					<p class="style">
+						<label for="password">登录密码</label>
+						<input type="password" id="password" onblur="checkPassword()">
+						<img src="images/icon21_1.png"  id="icon-red"/>
+						<span id="passwordInfo">
+							<img src="images/icon35.png" id="icon-green">
+							<span id="icon-orange"><img src="images/icon21.png" class="test">确认登录密码错误</span>
+						</span>
+					</p><br />
+					<p class="style">
+						<label for="repassword">确认密码</label>
+						<input type="password" id="repassword" onblur="checkRepassword()">
+						<img src="images/icon21_1.png" id="icon-red"/>
+						<span id="repasswordInfo">
+							<img src="images/icon35.png" id="icon-green">
+							<span id="icon-orange"><img src="images/icon21.png" class="test">两次密码不一致</span>
+						</span>
+					</p><br />
+					<p class="style">
+						<label for="email">常用邮箱</label>
+                			<input type="text" name="email" id="email" onblur="checkEmail()">
+                			<img src="images/icon21_1.png" id="icon-red"/>
+                			<span id="emailInfo">
+                				<img src="images/icon35.png" id="icon-green">
+                				<span id="icon-orange"><img src="images/icon21.png" class="test">确认常用邮箱错误</span>
+                			</span>
+					</p><br />
+					<p>
+						<label for="inputCode">图形验证码</label>
+            				<input type="text" id="inputCode" onblur="checkCode()">
+            				<img src="images/icon21_1.png" id="icon-red"/>
+           		 			<span id="randomCode"><img src="images/icon36.png" /></span>
+            				<span id="remind">看不清？</span>
+            				<span id="randomCodeChange">换一张</span>
+            				<span id="randomCodeInfo">
+            					<img src="images/icon35.png" id="icon-green">
+            					<span id="icon-orange"><img src="images/icon21.png" class="test">确认图形验证码错误</span>
+            				</span>
+					</p><br />
+					<p>
+                		<input type="checkbox" name="agreement" id="agreement">
+                		<label for="agreement">我已阅读并同意遵守</label>
+                		<span>«方便网服务协议»</span>
+					</p><br />
+					<p>
+						<input type="button" value="申请注册" onclick="doRegist()">
+					</p>
+				</form>
+				<div class="img">
+					<span><img src="images/webchat.png" /></span>
+					<span><img src="images/regis7.png" /></span>
+					<span><img src="images/regis6.png" /></span>
+				</div>
+			</div>
+			<ul class="about">
+				<li>关于我们</li>
+				<li>免费声明</li>
+				<li>常见问题</li>
+				<li>联系我们</li>
+				<li>人才招聘</li>
+			</ul>
+		</main>
+		<!--页脚-->
+		<footer>
+			<p>Copyright@ 2013-2016 <span>| 苏CP备12063525号－4 苏州乐卡网络科技有限公司</span></p>
+		</footer>
+	</body>
+
+</html>

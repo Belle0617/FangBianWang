@@ -1,0 +1,337 @@
+@charset "utf-8";
+
+/*头部大标题*/
+header{
+	width:100%;
+	max-width: 1920px;
+	height:1rem;
+	overflow: hidden;
+	margin:0 auto;
+	box-sizing: border-box;
+	border-bottom: 1px solid #49a75b;
+}
+header .logo{
+	width:1000px;
+	height:70px;
+	margin:15px auto 0;
+}
+header .logo img:nth-of-type(1){
+	width:166px;
+	height:70px;
+}
+header .logo img:nth-of-type(2){
+	width:204px;
+	height:46px;
+	padding: 0 0 12px 25px;
+}
+
+/*主题内容*/
+main{
+	width:100%;
+	max-width: 1920px;
+	/*height:720px;*/
+	margin:0 auto;
+	overflow: hidden;
+	border-bottom:1px solid #e8e8e8;
+}
+/*登录*/
+main .enter{
+	width:1000px;
+	height:64px;
+	margin:0 auto;
+	box-sizing: border-box;
+	padding: 22px 0 0 10px;
+}
+main .enter span:nth-of-type(1){
+	width:16px;
+	height:16px;
+}
+main .enter span:nth-of-type(1) img{
+	width:16px;
+	height:16px;
+}
+main .enter span:nth-of-type(2){
+	font-size: 16px;
+	font-weight: bolder;
+	line-height: 16px;
+}
+main .enter span:nth-of-type(3){
+	font-size: 8px;
+	font-weight: lighter;
+	line-height: 16px;
+	padding-left:738px;
+}
+main .enter span:nth-of-type(4){
+	font-size: 8px;
+	font-weight: lighter;
+	line-height: 16px;
+	color:#38a7ea;
+}
+/*注册*/
+main .registered{
+	width:1000px;
+	/*height:550px;*/
+	border:1px solid #dbdbdb;
+	margin:0 auto;
+	position: relative;
+}
+/*进度条*/
+main .registered .progress{
+	width:940px;
+	height:74px;
+	margin:0 auto;
+}
+main .registered .progress ul:nth-of-type(1){
+	width:940px;
+	height:40px;
+	display: flex;
+	justify-content: space-between;
+}
+main .registered .progress ul:nth-of-type(1) li{
+	height:40px;
+	font-size: 8px;
+	line-height: 40px;
+}
+main .registered .progress ul:nth-of-type(2){
+	width:885px;
+	height:34px;
+	box-sizing: border-box;
+	padding-left:27.5px;
+	display: flex;
+	justify-content: space-between;
+}
+main .registered .progress ul:nth-of-type(2) li{
+	height:34px;
+}
+main .registered .progress ul:nth-of-type(2) li:nth-of-type(1){
+	width:217px;
+	height:34px;
+}
+main .registered .progress ul:nth-of-type(2) li:nth-of-type(2){
+	width:243px;
+	height:34px;
+}
+main .registered .progress ul:nth-of-type(2) li:nth-of-type(3){
+	width:425px;
+	height:34px;
+}
+
+/*表单*/
+main .registered form{
+	width:740px;
+	height:430px;
+	padding:54px 0 0 30px;
+}
+main .registered form p{
+	height:32px;
+	font-size: 15px;
+	line-height: 32px;
+	position: relative;
+}
+   /*input框内红色感叹号*/
+main .registered form p #icon-red{
+	position: absolute;
+	width:14px;
+	height:14px;
+	top:10px;
+	left:300px;
+}
+main .registered form p:nth-of-type(5) #icon-red{
+	left:190px;
+}
+	/*input框外绿色感叹号*/
+main .registered form .style>span #icon-green{
+	position: absolute;
+	top:10px;
+	left:340px;
+}
+main .registered form p:nth-of-type(5) #randomCodeInfo #icon-green{
+	position: absolute;
+	top:10px;
+	left:460px;
+}
+	/*input框外橙色感叹号&提示框*/
+main .registered form p span #icon-orange{
+	width:192px;
+	height:24px;
+	border:1px solid #fdb51c;
+	background-color:#fff6cf;
+	box-sizing: border-box;
+	padding-left:20px;
+	color:#fdb51c;
+	line-height: 22px;
+	font-size: 8px;
+	position: absolute;
+	top:5px;
+	left:340px;
+}
+main .registered form p span #icon-orange img{
+	width:12px;
+	height:12px;
+	position: absolute;
+	top:6px;
+	left:5px;
+}
+main .registered form p:nth-of-type(5) span #icon-orange{
+	left:460px;
+}
+
+	/*input框样式*/
+main .registered form .style input{
+	width:240px;
+	height:30px;
+	border:1px solid #e8e8e8;
+	margin-left:15px;
+}
+main .registered form p:nth-of-type(5) input{
+	width:128px;
+	height:30px;
+	border:1px solid #e8e8e8;
+}
+	/*图形验证码的图片*/
+main .registered form p:nth-of-type(5) span:nth-of-type(1){
+	margin-left:25px;
+}
+	/*图形验证码：“看不清?”*/
+main .registered form p:nth-of-type(5) span:nth-of-type(2){
+	margin-left:25px;
+}
+	 /*图形验证码：“换一张”*/
+main .registered form p:nth-of-type(5) span:nth-of-type(3){
+	color:#37a7e9;
+}
+	/*服务协议*/
+main .registered form p:nth-of-type(6){
+	padding-left:80px;
+}
+main .registered form p:nth-of-type(6) span:nth-of-type(1){
+	color:#37a7e9;
+}
+
+
+	/*申请注册*/
+main .registered form p:nth-of-type(7){	
+	padding-left:80px;	
+}
+main .registered form p:nth-of-type(7) input{
+	border-radius: 6px;
+	width:130px;
+	height:32px;
+	background-color: #ff9000;
+	color:#fff;
+	font-size: 16px;
+	text-align: center;
+	line-height: 32px;;
+}
+	/*表单检验错误样式*/
+/*.wrong{
+	width:192px;
+	height:24px;
+	border:1px solid #fdb51c;
+	background-color:#fff6cf;
+	box-sizing: border-box;
+	padding-left:15px;
+	color:#fdb51c;
+	line-height: 24px;
+	font-size: 10px;
+	margin-top:3px;
+}
+	/*表单检验正确样式*/
+/*.right{
+	width:14px;
+	height:14px;
+	box-sizing: border-box;
+	padding-right:400px; 
+	margin-top:9px;
+	background: url('../images/icon34.png') no-repeat;
+	background-size: contain;
+}*/
+/*二维码*/
+main .registered .img{
+	width:198px;
+	height:398px;
+	border:1px solid #e8e8e8;
+	position: absolute;
+	top:130px;
+	right:20px;
+}
+main .registered .img span:nth-of-type(1){
+	width:198px;
+	height:180px;
+	padding:30px 22.5px 0 22.5px;
+	position: absolute
+}
+main .registered .img span:nth-of-type(1) img{
+	width:153px;
+	height:150px;
+}
+main .registered .img span:nth-of-type(2){
+	width:198px;
+	height:65px;
+	padding:204px 55px 0 55px;
+	position: absolute
+}
+main .registered .img span:nth-of-type(2) img{
+	width:88px;
+	height:17px;
+}
+main .registered .img span:nth-of-type(3){
+	width:198px;
+	height:65px;
+	padding-top:245px;
+	position: absolute
+}
+main .registered .img span:nth-of-type(3) img{
+	width:198px;
+	height:153px;
+}
+/*关于我们*/
+main .about{
+	width:600px;
+	height:95px;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	box-sizing: border-box;
+	padding-top:75px;
+	margin:0 auto;
+	position: relative;
+}
+main .about li{
+	width:120px;
+	height:20px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 20px;
+	box-sizing: border-box;
+	border-right: 1px solid #e8e8e8;
+}
+main .about li:nth-of-type(5){
+	border-right: 0px;
+}
+/*页脚*/
+footer{
+	width:100%;
+	max-width: 1920px;
+	margin:0 auto;
+	overflow: hidden;	
+}
+footer p{
+	text-align: center;
+	font-size:8px;
+	color:#b9beb9;
+	line-height: 60px;
+}
+footer p span{
+	font-size:10px;
+	color:#000;
+	line-height: 60px;
+}
+
+
+
+
+
+
+
+

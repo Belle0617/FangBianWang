@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>方便网</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/success.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<script src="js/js.js"></script>
+		<script src="js/jquery-1.10.2.min.js"></script>
+		<script src="js/success.js"></script>
+	</head>
+
+	<body>
+		<!--头部大标题-->
+		<header>
+			<div class="logo">
+				<img src="images/logo.png" class="logo1" />
+				<img src="images/logo1.png" class="logo2" />
+			</div>
+		</header>
+		<!--主题内容-->
+		<main>
+			<!--登录-->
+			<div class="enter">
+				<span><img src="images/icon9_1.png" /></span>
+				<span>注册会员</span>
+				<span>我已经注册，现在就登录</span>
+				<span> 登录</span>
+			</div>
+			<div class="registered">
+				<!--进度条-->
+				<div class="progress">
+					<ul>
+						<li>填写注册信息</li>
+						<li>接受并填写手机验证码</li>
+						<li>注册成功</li>
+					</ul>
+					<ul>
+						<li><img src="images/regis1.png" /></li>
+						<li><img src="images/regis2.png" /></li>
+						<li><img src="images/regis5.png" /></li>
+					</ul>
+				</div>
+				<div class="success">
+					<div class="content">
+						<span class="img-right"><img src="images/icon34.png" /></span>
+						<p class="success-prompt">恭喜你，注册已成功！</p>
+						<p class="success-prompt">登录名为：<span id="success-number"></span></p>
+						<p class="success-registered">
+							<input type="button" value="立即登录" id="doRegistered" />
+						</p>
+						<div class="download-img">
+							<span><img src="images/webchat.png" /></span>
+							<span><img src="images/text.png" /></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 关于我们 -->
+			<ul class="about">
+				<li>关于我们</li>
+				<li>免费声明</li>
+				<li>常见问题</li>
+				<li>联系我们</li>
+				<li>人才招聘</li>
+			</ul>
+		</main>
+		<!--页脚-->
+		<footer>
+			<p>Copyright@ 2013-2016 <span>| 苏CP备12063525号－4 苏州乐卡网络科技有限公司</span></p>
+		</footer>
+
+		<!--覆盖透明-->
+		<div class="over"></div>
+		<!--弹窗登录-->
+		<div class="loginpop">
+			<!--密码登录-->
+			<div class="pwdlogin">
+				<ul>
+					<li class="pwdlg">密码登录</li>
+					<li class="codelg">手机验证码登录</li>
+				</ul>
+				<input type="text" placeholder="手机号" class="phoneo">
+				<input type="password" placeholder="密码" class="pwdo">
+				<div class="errorshow">帐号密码不一致</div>
+				<div>
+					<div>
+						<input type="checkbox" id="autologin"><label for="autologin">自动登录</label>
+					</div>
+					<a href="#">忘记密码？</a>
+				</div>
+				<button class="login1">登录</button>
+				<div class="regist">
+					<p>还不是方便网会员？
+						<a href="index.html">免费注册</a>
+					</p>
+				</div>
+			</div>
+			<!--手机验证码登录-->
+			<div class="codelogin">
+				<ul>
+					<li class="pwdlg">密码登录</li>
+					<li class="codelg">手机验证码登录</li>
+				</ul>
+				<input type="text" placeholder="手机号">
+				<input type="text" placeholder="验证码"><img src="images/icon32.png" alt="">
+				<span>看不清楚？</span>
+				<a href="">换一张</a>
+				<input type="text" placeholder="手机验证码">
+				<span>获取手机验证码</span>
+				<button class="login2">登录</button>
+				<div class="regist2">
+					<p>还不是方便网会员？
+						<a href="index.html">免费注册</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</body>
+
+</html>

@@ -1,0 +1,254 @@
+/*成功界面*/
+main .registered .success{
+	width:1000px;
+	height:620px;
+	margin:0 auto;
+}
+main .registered .success .content{
+	width:370px;
+	height: 350px;
+	margin:0 auto;
+	position: relative;
+	top:100px;
+}
+main .registered .success .content .img-right{
+	width:48px;
+	height:48px;
+	position: absolute;
+}
+main .registered .success .content .img-right img{
+	width:48px;
+	height:48px;
+}
+main .registered .success .content .success-prompt{
+	width:250px;
+	font-size: 14px;
+	font-weight: bolder;
+	box-sizing: border-box;
+	padding-left:70px;
+	padding-top:8px;
+}
+main .registered .success .content .success-prompt #success-number{
+	color:#ff9000;
+}
+/*立即登录*/
+main .registered .success .content .success-registered{
+	position: absolute;
+	top:12px;
+	right:0px;
+}
+main .registered .success .content .success-registered #doRegistered{
+	width:120px;
+	height:32px;
+	background-color: #ff9000;
+	border-radius: 4px;
+	color:#fff;
+	font-size: 12px;
+	line-height: 32px;
+	text-align: center;
+}
+/*二维码*/
+main .registered .success .content .download-img{
+	width:200px;
+	height:220px;
+	position: relative;
+	top:70px;
+	margin:0 auto;
+	border:1px solid #e2e2e2;
+}
+main .registered .success .content .download-img span:nth-of-type(1){
+	width:153px;
+	height:150px;
+	position: absolute;
+	top:25px;
+	left:24px;
+}
+main .registered .success .content .download-img span:nth-of-type(2){
+	width:119px;
+	height:17px;
+	position: absolute;
+	top:190px;
+	left:41px;
+}
+
+
+
+
+
+/*弹窗登录*/
+.over{
+	width: 100%;
+	height: 100%;
+	top: 0;
+	position: fixed;
+	z-index: 1;
+	background-color: rgba(0,0,0,0.3);
+	display: none;
+}
+	/*密码登录*/
+.loginpop .pwdlogin{
+	width: 360px;
+	height: 380px;
+	position: fixed;
+	left: 36%;
+	top: 36%;
+	z-index: 2;
+	border-radius: 8px;
+	background: #fff;
+	display: none;
+}
+.loginpop .pwdlogin ul{
+	width: 360px;
+	height: 55px;
+	box-sizing:border-box;
+}
+.loginpop .pwdlogin ul li{
+	width: 180px;
+	height: 55px;
+	float: left;
+	text-align: center;
+	font: 18px;
+	padding-top: 20px;
+	box-sizing:border-box;
+	font-weight: bold;
+}
+.loginpop .pwdlogin ul li:nth-of-type(1){
+	color: #49a76b;
+	border-bottom: 3px solid #49a76b; 
+}
+.loginpop .pwdlogin ul li:nth-of-type(2){
+	color: #a6a5a3;
+	border-bottom: 1px solid #49a76b; 
+}
+	/*手机号*/
+.loginpop .pwdlogin>input{
+	margin-top:26px;
+	margin-left: 30px;
+	width: 300px;
+	height: 40px;
+	color:#63615c;
+	padding-left: 46px;
+	box-sizing:border-box;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+}
+	/*手机验证码登录*/
+.loginpop .pwdlogin>div:nth-of-type(2){
+	width: 300px;
+	height: auto;
+	margin: 16px auto 0 auto;
+	display: flex;
+	justify-content:space-between;
+}
+	/*手机号或者账号不一致时显示*/
+.errorshow{
+	width: 130px;
+	padding: 6px 6px;
+	margin: 10px auto 0 auto;
+	color: red; 
+	text-align: center;
+	display: none;
+}
+.loginpop .pwdlogin>div a{
+	color:#76bcf0;
+}
+.loginpop .pwdlogin button{
+	color:#fff;
+	font:18px;
+	padding: 8px 130px;
+	margin-left:34px;
+	margin-top:20px;
+	background: #49a75b;
+	border-radius: 5px;
+}
+.regist{
+	width: 330px;
+	height: 50px;
+	margin: 20px auto;
+	text-align: center;
+	background: #f7fbf5;
+	padding-top:18px;
+	box-sizing:border-box;
+}
+	/*手机验证码登录*/
+.loginpop .codelogin{
+	width: 360px;
+	height: 380px;
+	position: fixed;
+	left: 36%;
+	top: 36%;
+	z-index: 2;
+	border-radius: 8px;
+	background: #fff;
+	display: none;
+}
+.loginpop .codelogin ul{
+	width: 360px;
+	height: 55px;
+	box-sizing:border-box;
+}
+.loginpop .codelogin ul li{
+	width: 180px;
+	height: 55px;
+	float: left;
+	text-align: center;
+	font: 18px;
+	padding-top: 20px;
+	box-sizing:border-box;
+	font-weight: bold;
+}
+.loginpop .codelogin ul li:nth-of-type(2){
+	color: #49a76b;
+	border-bottom: 3px solid #49a76b; 
+}
+.loginpop .codelogin ul li:nth-of-type(1){
+	color: #a6a5a3;
+	border-bottom: 1px solid #49a76b; 
+}
+.loginpop .codelogin>input{
+	margin-top:26px;
+	margin-left: 30px;
+	width: 126px;
+	height: 40px;
+	color:#63615c;
+	padding-left: 46px;
+	box-sizing:border-box;
+	border: 1px solid #e0e0e0;
+	border-radius: 3px;
+}
+.loginpop .codelogin>input:nth-of-type(1){
+	margin-top:26px;
+	margin-left: 30px;
+	width: 300px;
+	height: 40px;
+	color:#63615c;
+	padding-left: 46px;
+	box-sizing:border-box;
+	border: 1px solid #e0e0e0;
+}
+.loginpop .codelogin span:nth-of-type(2){
+	padding: 6px 9px;
+	border:1px solid #eeeeee;
+	font: 10px;
+}
+.loginpop .codelogin a{
+	color:#21aee4;
+}
+.loginpop .codelogin button{
+	color:#fff;
+	font:18px;
+	padding: 8px 130px;
+	margin-left:34px;
+	margin-top:20px;
+	background: #49a75b;
+	border-radius: 5px;
+}
+.regist2{
+	width: 330px;
+	height: 50px;
+	margin: 20px auto;
+	text-align: center;
+	background: #f7fbf5;
+	padding-top:18px;
+	box-sizing:border-box;
+}
